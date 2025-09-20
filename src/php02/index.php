@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,25 +11,21 @@
 </head>
 <body>
     <header class="header">
-    <div class="header__inner">
-        <a class="header__logo" href="/php02/index.php">
-            World Clock
-        </a>
-    </div>
+        <div class="header__inner">
+            <a class="header__logo" href="">World Clock</a>
+        </div>
     </header>
     <main>
         <div class="search-form__content">
-            <div class="search-form__heading">
-                <h2 class="search-form__content-title">日本と世界の時間を比較</h2>
-            </div>
-            <form class="search-form" action="result.php" method="get">
+            <h2 class="search-form__content-title">日本と世界の時間を比較</h2>
+            <form class="search-form" action="result.php" method="GET">
                 <div class="search-form__item">
                     <select class="search-form__item-select" name="city" id="">
                         <option value="シドニー">シドニー</option>
                         <option value="上海">上海</option>
                         <option value="モスクワ">モスクワ</option>
                         <option value="ロンドン">ロンドン</option>
-                        <option value="ヨハネスブルグ">ヨハネスブルグ</option>
+                        <option value="ヨハネスブルク">ヨハネスブルグ</option>
                         <option value="ニューヨーク">ニューヨーク</option>
                     </select>
                 </div>

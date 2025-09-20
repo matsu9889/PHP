@@ -1,11 +1,12 @@
 <?php
+
 require_once('config/status_codes.php');
 
 $answer_code = htmlspecialchars($_POST['answer_code'],ENT_QUOTES);
 $option = htmlspecialchars($_POST['option'],ENT_QUOTES);
 
-if(empty($option)){
-    header('Location: index.php');
+if (empty($option)){
+    header('Location:index.php');
     exit;
 }
 
@@ -15,7 +16,6 @@ foreach($status_codes as $status_code){
         $description = $status_code['description'];
     }
 }
-
 $result = $option === $code;
 
 ?>
@@ -34,7 +34,7 @@ $result = $option === $code;
 <body>
     <header class="header">
         <div class="header__inner">
-            <a class="header__logo"  href="/php03">
+            <a class="header__logo" href="">
                 Status Code Quiz
             </a>
         </div>
@@ -66,5 +66,6 @@ $result = $option === $code;
             </div>
         </div>
     </main>
+    
 </body>
 </html>

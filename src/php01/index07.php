@@ -1,20 +1,20 @@
 <?php
-function triangle($width,$height){
-    $total= ($width * $height) /2;
-    return $total;
+
+function getSquareArea($base,$height)
+{
+    return $base * $height;
 }
 
-function Square($width,$height){
-    $total= ($width * $height);
-    return $total;
+function getTriangleArea($base,$height)
+{
+    return ($base * $height) /2;
 }
 
-function Trapezoid($upperBase,$lowerBase,$height){
-    $total= ($upperBase + $lowerBase) * $height / 2;
-    return $total;
+function getTrapezoidArea($upperBase, $lowerBase, $height)
+{
+  return ($upperBase + $lowerBase) * $height / 2;
 }
 
-echo triangle(10,6) . "\n";
-echo Square(10,6) . "\n";
-echo Trapezoid(4,5,4);
-
+echo getSquareArea(10,5). "\n";
+echo getTriangleArea(10,5). "\n";
+echo getTrapezoidArea(6,4,5);
