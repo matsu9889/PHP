@@ -1,9 +1,9 @@
 <?php
 $status_codes = [
     [
-    'code' => '102',
-    'meaning' => 'Processing',
-    'description' => '処理中である'
+        'code' => '102',
+        'meaning' => 'Processing',
+        'description' => '処理中である'
     ],
     [
     'code' => '200',
@@ -55,4 +55,5 @@ $status_codes = [
     'meaning' => 'Service Unavailable',
     'description' => '一時的にサーバにアクセスが出来ない'
     ]
-];
+    ];
+
